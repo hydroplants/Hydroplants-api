@@ -3,7 +3,7 @@ var router = express.Router();
 
 var sqlite3 = require('sqlite3').verbose();
 
-var db = new sqlite3.Database('../plant_care_data.db', sqlite3.OPEN_READONLY, (err) => {
+var db = new sqlite3.Database('/plant_care_data.db', sqlite3.OPEN_READONLY, (err) => {
     if (err) {
         console.log(err.message);
     }
